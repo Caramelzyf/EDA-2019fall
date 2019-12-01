@@ -1,6 +1,6 @@
 `timescale 10ns/1ns
 module cnt16_tb();
-reg clk,en,rst;
+reg clk,en,rst,add;
 
 wire [15:0] dout;
 wire cout;
@@ -13,7 +13,8 @@ initial begin
 end
 initial begin
   #0 en=1'b0;#5 en=1'b1;
+  #0 add=1'b1; #10 add=1'b0; #10 add=1'b1;
 end
 
-cnt16 U1(.clk(clk),.rst(rst),.en(en),.cout(cout),.dout(dout));
+cnt16 U1(.clk(clk),.rst(rst),.en(en),.cout(cout),.dout(dout),.add(add));
 endmodule
