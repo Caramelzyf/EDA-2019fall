@@ -1,0 +1,10 @@
+
+State Machine - |light|flag
+Name flag.000 flag.110 flag.010 flag.011 flag.100 flag.101 flag.001 
+flag.001 0 0 0 0 0 0 0 
+flag.101 0 0 0 0 0 1 1 
+flag.100 0 0 0 0 1 0 1 
+flag.011 0 0 0 1 0 0 1 
+flag.010 0 0 1 0 0 0 1 
+flag.110 0 1 0 0 0 0 1 
+flag.000 1 0 0 0 0 0 1 
